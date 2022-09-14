@@ -8,6 +8,14 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    year: {
+      type: DataTypes.NUMBER,
+      allowNull: false,
+    },
+    genre: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false,
+    },
     
   });
 };
